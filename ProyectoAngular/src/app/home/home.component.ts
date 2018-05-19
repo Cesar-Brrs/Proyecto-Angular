@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
-  variable = "Esto es una prueba";
+  hero = 'Windstorm';
   constructor() { }
 
   ngOnInit() {
