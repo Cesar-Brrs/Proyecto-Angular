@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  tituloprueba : "Aqui va un titulo de prueba";
-  constructor() { }
+  tituloprueba: "Aqui va un titulo de prueba";
+
+  constructor() {
+  }
+
+  public variable_clan;
 
   ngOnInit() {
   }
-
 }
