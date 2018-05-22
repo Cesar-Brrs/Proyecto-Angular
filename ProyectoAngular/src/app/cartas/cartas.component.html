@@ -1,3 +1,22 @@
-<p>
-  cartas works!
-</p>
+<br><br>
+
+<div style="text-align: center" class="container bg-light"><h3>Mazo de 8 cartas generado aleatoriamente, atrevete a
+  usarlo!</h3></div>
+
+<br><br>
+
+<div style="display: inline-flex;" *ngFor="let entrada of this.mis_cartas">
+  <div class="card border-dark" style="width: 18rem; display: inline-flex;">
+    <img class="card-img-top" src="http://www.clashapi.xyz/images/cards/{{entrada.idName}}.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-primary">{{entrada.name}}</h3>
+      <h6 class="card-text">Rareza: {{entrada.rarity}}</h6>
+      <p class="card-text">Descripción: <br>{{entrada.description}}</p>
+      <p class="card-text">Coste de Elixir: {{entrada.elixirCost}}</p>
+      <p class="card-text">Disponible en Arena: {{entrada.arena}}</p>
+    </div>
+  </div>
+</div>
+
+<br><br>
+

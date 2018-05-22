@@ -1,3 +1,19 @@
-<p>
-  arenas works!
-</p>
+<br><br>
+
+<div style="text-align: center" class="container bg-light"><h3>Estas son todas las arenas, ve a lo mas ALTO!!</h3></div>
+
+<br><br>
+
+
+<div style="display: inline-flex;" *ngFor="let entrada of this.mis_arenas">
+  <div class="card border-dark" style="width: 18rem; display: inline-flex;">
+    <img class="card-img-top" src="http://www.clashapi.xyz/images/arenas/{{entrada.idName}}.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-primary">{{entrada.name}}</h3>
+      <h6 class="card-text">Trofeos minimos: {{entrada.minTrophies}}+ <img class="arenaFotos" src="assets\img\trofeos.png"> </h6>
+      <p class="card-text">Recompensa por victoria: <br>{{entrada.victoryGold}} <img class="arenaFotos" src="assets\img\gold.jpg"> </p>
+      <p style="text-decoration: underline">Estar en esta arena te permite en tu clan:</p>
+      <p class="card-text">Donar: {{entrada.clan.donate.common}} comunes o {{entrada.clan.donate.rare}} raras <br> Pedir: {{entrada.clan.request.common}} comunes o {{entrada.clan.request.rare}} raras</p>
+    </div>
+  </div>
+</div>
