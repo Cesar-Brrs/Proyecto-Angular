@@ -15,13 +15,19 @@ import {ContactoComponent} from './contacto/contacto.component';
 import {container} from "@angular/core/src/render3/instructions";
 import {config} from "rxjs/index";
 import {ServicioService} from "./servicio.service";
+import { CartasComponent } from './cartas/cartas.component';
+import { ArenasComponent } from './arenas/arenas.component';
+import { RandomdeckComponent } from './randomdeck/randomdeck.component';
 
 /* Aqui pongo las rutas de los componentes que quiero que se muestren cuendo este en esa parte de la web */
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'contacto', component: ContactoComponent},
-  {path: 'informacion', component: InformacionComponent}
+  {path: 'informacion', component: InformacionComponent},
+  {path: 'cartas', component: CartasComponent},
+  {path: 'arenas', component: ArenasComponent},
+  {path: 'randomdeck', component: RandomdeckComponent}
 ];
 
 /* En imports ponemos lo que queremos importar */
@@ -34,7 +40,10 @@ const routes: Routes = [
     FooterComponent,
     HomeComponent,
     InformacionComponent,
-    ContactoComponent
+    ContactoComponent,
+    CartasComponent,
+    ArenasComponent,
+    RandomdeckComponent
   ],
   imports: [
     BrowserModule,
