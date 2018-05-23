@@ -10,3 +10,6 @@
   height: 700px;
   width: 290px;
 }
+.presentacion {
+  background: linear-gradient(to left, #d3fff5, white);
+}
