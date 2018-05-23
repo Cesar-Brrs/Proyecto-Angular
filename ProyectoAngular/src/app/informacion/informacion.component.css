@@ -1,0 +1,16 @@
+.card{
+  height: 680px;
+  width: 286px;
+}
+.card-img-top{
+  height: 375px;
+  width: 286px;
+}
+.presentacion {
+  background: linear-gradient(to left, #d3fff5, white);
+}
+.arenaFotos{
+  height: 20px;
+  width: 20px;
+}
+

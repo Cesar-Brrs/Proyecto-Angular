@@ -1,3 +1,18 @@
-<p>
-  informacion works!
-</p>
+<br><br>
+
+<div style="display: inline-flex;" *ngFor="let entrada of this.ligas_info">
+  <div class="card border-dark" style="width: 18rem; display: inline-flex;">
+    <img class="card-img-top" src="http://www.clashapi.xyz/images/leagues/{{entrada.idName}}.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-primary">{{entrada.name}}</h3>
+      <h6 class="card-text">Trofeos Mínimos: {{entrada.minTrophies}} + <img class="arenaFotos"
+                                                                            src="assets\img\trofeos.png"></h6>
+      <h6 class="card-text">Reseteo de temporada: <br>{{entrada.leagueSeasonReset}} + <img class="arenaFotos"
+                                                                                           src="assets\img\trofeos.png">
+      </h6>
+      <p class="card-text">Oro por victoria: {{entrada.victoryGold}} <img class="arenaFotos" src="assets\img\gold.jpg"></p>
+      <p class="card-text">Disponible en Arena: {{entrada.arena}}</p>
+      <p class="card-text">Número de Liga: {{entrada.order}}</p>
+    </div>
+  </div>
+</div>

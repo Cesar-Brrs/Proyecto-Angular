@@ -1,0 +1,17 @@
+<div style="display: inline-flex;" *ngFor="let entrada of this.mis_cofres">
+  <div class="card border-dark" style="width: 18rem; display: inline-flex;">
+    <img class="card-img-top" src="http://www.clashapi.xyz/images/chests/{{entrada.idName}}.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title text-primary">{{entrada.name}}</h3>
+      <h6 class="card-text">Probabilidad de cartas: {{entrada.cards.minEpic}} Epicas, {{entrada.cards.minLegendary}}
+        Legendarias, {{entrada.cards.minRare}} Raras, {{entrada.cards.number}} Comunes.</h6>
+      <p class="card-text">Tiempo de desbloqueo: <br>{{entrada.unlock.time}} Minutos o {{entrada.unlock.gemCost}} Gemas
+        <img style="width: 25px; height: 25px" src="assets\img\gemas.jpg"></p>
+      <p class="card-text">Recompensa de oro: {{entrada.gold.min}} min. o {{entrada.gold.max}} max. <img
+        style="width: 25px; height: 25px" src="assets\img\gold.jpg"></p>
+      <p class="card-text">Coste de Gemas (Adquisición en tienda): {{entrada.gemCost}} Gemas <img
+        style="width: 25px; height: 25px" src="assets\img\gemas.jpg"></p>
+      <p class="card-text">Disponible en Arena: {{entrada.arena}}</p>
+    </div>
+  </div>
+</div>

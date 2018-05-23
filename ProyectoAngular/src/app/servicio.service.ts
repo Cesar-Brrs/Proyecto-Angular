@@ -14,10 +14,6 @@ export class ServicioService {
     return this.consulta.get('http://www.clashapi.xyz/api/cards');
   }
 
-  buscadorID(dato): Observable<any> {
-    return this.consulta.get("http://www.clashapi.xyz/api/cards/" + dato);
-  }
-
   buscadorArenas(): Observable<any> {
     return this.consulta.get('http://www.clashapi.xyz/api/arenas');
   }
@@ -25,8 +21,12 @@ export class ServicioService {
   buscadorAlea(): Observable<any> {
     return this.consulta.get('http://www.clashapi.xyz/api/random-deck');
   }
-  buscadorClan(): Observable<any> {
-    return this.consulta.get(' http://www.clashapi.xyz/api/arenas');
+
+  buscadorLigas(): Observable<any> {
+    return this.consulta.get('http://www.clashapi.xyz/api/leagues');
   }
 
+  buscadorCofres(): Observable<any> {
+    return this.consulta.get('http://www.clashapi.xyz/api/chests');
+  }
 }

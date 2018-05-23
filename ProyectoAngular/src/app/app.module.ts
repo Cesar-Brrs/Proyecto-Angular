@@ -18,6 +18,7 @@ import {ServicioService} from "./servicio.service";
 import { CartasComponent } from './cartas/cartas.component';
 import { ArenasComponent } from './arenas/arenas.component';
 import { RandomdeckComponent } from './randomdeck/randomdeck.component';
+import { ChestComponent } from './chest/chest.component';
 
 /* Aqui pongo las rutas de los componentes que quiero que se muestren cuendo este en esa parte de la web */
 
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: 'informacion', component: InformacionComponent},
   {path: 'cartas', component: CartasComponent},
   {path: 'arenas', component: ArenasComponent},
-  {path: 'randomdeck', component: RandomdeckComponent}
+  {path: 'randomdeck', component: RandomdeckComponent},
+  {path: 'chest', component: ChestComponent}
 ];
 
 /* En imports ponemos lo que queremos importar */
@@ -43,7 +45,8 @@ const routes: Routes = [
     ContactoComponent,
     CartasComponent,
     ArenasComponent,
-    RandomdeckComponent
+    RandomdeckComponent,
+    ChestComponent
   ],
   imports: [
     BrowserModule,

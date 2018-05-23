@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ServicioService} from "../servicio.service";
 
 @Component({
@@ -8,19 +8,12 @@ import {ServicioService} from "../servicio.service";
 })
 
 export class HomeComponent implements OnInit {
-  constructor(public miservicio: ServicioService) { }
+  constructor(public miservicio: ServicioService) {
+  }
 
-  public variable_clan;
 
   ngOnInit() {
   }
 
-  peticionClan(){
-    console.log('Antes de suscribirse')
-    this.miservicio.buscadorClan().subscribe(resultado => {
-      console.log('Este es el resultado que da la petición', resultado)
-      this.variable_clan = resultado;
 
-    });
-  }
 }
