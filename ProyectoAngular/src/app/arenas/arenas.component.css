@@ -4,5 +4,9 @@
 }
 .card-img-top{
   height: 375px;
-  width: 286px;
+  width: 290px;
+}
+.card{
+  height: 700px;
+  width: 290px;
 }

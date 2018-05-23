@@ -12,17 +12,6 @@ export class HomeComponent implements OnInit {
 
   public variable_clan;
 
-  public array_De_cosas = [
-    {nombre: 'A ver', id: '4'},
-    {nombre: 'si', id: '3'},
-    {nombre: 'me muero', id: '2345'},
-    {nombre: 'de una', id: '333'},
-    {nombre: 'puta vez', id: '444'},
-    {nombre: 'ya cojones', id: '666'},
-
-
-  ];
-
   ngOnInit() {
   }
 

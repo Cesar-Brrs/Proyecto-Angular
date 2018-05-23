@@ -1,8 +1,12 @@
+.card{
+  height: 740px;
+  width: 286px;
+}
 .card-img-top{
   height: 375px;
   width: 286px;
 }
-.card{
-  height: 720px;
-  width: 286px;
+.presentacion {
+  background: linear-gradient(to left, #d3fff5, white);
 }
+
